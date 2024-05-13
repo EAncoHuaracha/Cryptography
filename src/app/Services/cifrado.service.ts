@@ -21,7 +21,7 @@ export class CifradoService {
     }
 
     // Rellenar con 'X'
-    const caracteres_restantes = clave.length - (j % (clave.length + 1));
+    const caracteres_restantes = (clave.length - (j % (clave.length))) % clave.length;
     for (let i = 0; i < caracteres_restantes; i++) {
       frasenueva += 'X';
     }
