@@ -20,6 +20,8 @@ export class CifradoService {
       }
     }
 
+    console.log(frasenueva);
+
     // Rellenar con 'X'
     const caracteres_restantes = (clave.length - (j % (clave.length))) % clave.length;
     for (let i = 0; i < caracteres_restantes; i++) {
@@ -41,8 +43,8 @@ export class CifradoService {
         aux = '';
       }
     }
-    resultado = resultado.toUpperCase();
-    return resultado.trim();
+    resultado = resultado.toLocaleLowerCase();
+    return resultado;
   }
 
 }

@@ -34,7 +34,7 @@ export class AppComponent {
       if (operacion === 'encrypt') {
         this.resultado = this.cifradoService.cifrarPorGrupo(mensaje);
       } else {
-        this.resultado = this.descifradorService.descifrarAlberti(mensaje, 'Lo');
+        this.resultado = this.descifradorService.descifrarAlberti(mensaje, 'Ao');
       }
     }
   }
